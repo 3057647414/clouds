@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.moc.mybatis.Mapper.OrderMapper">
+  <resultMap id="BaseResultMap" type="com.moc.mybatis.Model.Order">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="ordernum" jdbcType="VARCHAR" property="ordernum" />
+    <result column="shopobj" jdbcType="OTHER" property="shopobj" />
+    <result column="shopid" jdbcType="BIGINT" property="shopid" />
+    <result column="phone" jdbcType="BIGINT" property="phone" />
+    <result column="kdnum" jdbcType="VARCHAR" property="kdnum" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="addressto" jdbcType="VARCHAR" property="addressto" />
+    <result column="accept" jdbcType="VARCHAR" property="accept" />
+    <result column="paymethon" jdbcType="VARCHAR" property="paymethon" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, ordernum, shopobj, shopid, phone, kdnum, address, addressto, accept, paymethon
+  </sql>
+</mapper>
